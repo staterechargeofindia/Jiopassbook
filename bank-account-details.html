@@ -2,58 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bank Account Details Form</title>
+    <title>Demo Bank Account Details</title>
 
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+            background: #eaeaea;
         }
 
         .page {
-            width: 210mm;
-            min-height: 297mm;
+            width: 8.27in;
+            height: 6.90in;
             margin: auto;
             background: #ffffff;
-            padding: 20mm;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            padding: 0.4in;
+            box-shadow: 0 0 6px rgba(0,0,0,0.3);
+            box-sizing: border-box;
         }
 
         h1 {
             text-align: center;
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 15px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
 
         h2 {
-            font-size: 12px;
+            font-size: 11px;
             border-bottom: 1px solid #000;
-            padding-bottom: 3px;
-            margin-top: 20px;
+            margin-top: 10px;
+            padding-bottom: 2px;
         }
 
         .row {
             display: flex;
-            margin-top: 8px;
-            font-size: 11px;
+            font-size: 10.5px;
+            margin-top: 5px;
         }
 
         .label {
-            width: 180px;
+            width: 170px;
             font-weight: bold;
         }
 
         .value {
             flex: 1;
-            border-bottom: 1px solid #000;
-            height: 14px;
         }
 
         .address {
-            border-bottom: 1px solid #000;
-            height: 16px;
-            margin-top: 6px;
+            font-size: 10.5px;
+            margin-top: 4px;
         }
 
         @media print {
@@ -72,46 +70,37 @@
 
 <div class="page">
 
-    <h1>Bank Account Details</h1>
+    <h1>Jio Payment Bank<br>Account Details (Demo)</h1>
 
     <h2>Account Details</h2>
-    <div class="row"><div class="label">Account Type :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Account Number :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Customer ID :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Customer Name :</div><div class="value"></div></div>
+    <div class="row"><div class="label">Account Type :</div><div class="value">Savings Account</div></div>
+    <div class="row"><div class="label">Account Number :</div><div class="value">925010005855107</div></div>
+    <div class="row"><div class="label">Customer ID :</div><div class="value">972803685</div></div>
+    <div class="row"><div class="label">Customer Name :</div><div class="value">MD ANWAR ALI</div></div>
+    <div class="row"><div class="label">A/c Open Date :</div><div class="value">10-02-2025</div></div>
+    <div class="row"><div class="label">CKYC Number :</div><div class="value">XXXXXXXXXX5838</div></div>
 
-    <h2>Account Information</h2>
-    <div class="row"><div class="label">A/c Open Date :</div><div class="value"></div></div>
-    <div class="row"><div class="label">CKYC Number :</div><div class="value"></div></div>
+    <h2>Address</h2>
+    <div class="address">NEW BUILDING NO 37, WARD NO. 4, GAYGHAT NANPARA</div>
+    <div class="address">HANUMAN MANDIR</div>
+    <div class="address">BAHRAICH – 271865</div>
 
-    <h2>Address Details</h2>
-    <div class="address"></div>
-    <div class="address"></div>
-    <div class="address"></div>
-
-    <h2>Contact Details</h2>
-    <div class="row"><div class="label">Mobile No :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Residence Tel No :</div><div class="value"></div></div>
-
-    <h2>Nomination Details</h2>
-    <div class="row"><div class="label">Nomination :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Nomination Name :</div><div class="value"></div></div>
+    <h2>Contact & Nomination</h2>
+    <div class="row"><div class="label">Mobile Number :</div><div class="value">+91 9670755035</div></div>
+    <div class="row"><div class="label">Nomination :</div><div class="value">No Nomination</div></div>
 
     <h2>Branch Details</h2>
-    <div class="row"><div class="label">Branch Code :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Branch Name :</div><div class="value"></div></div>
-    <div class="address"></div>
-    <div class="address"></div>
-
-    <div class="row"><div class="label">Branch Timings :</div><div class="value"></div></div>
+    <div class="row"><div class="label">Branch Code :</div><div class="value">5038</div></div>
+    <div class="row"><div class="label">Branch Name :</div><div class="value">Nanpara Bazar UP</div></div>
+    <div class="address">Upper Ground Floor, Old Building</div>
+    <div class="address">Nanpara, Bahraich – 271865</div>
+    <div class="row"><div class="label">Branch Timings :</div><div class="value">10:00 AM – 4:00 PM</div></div>
 
     <h2>Bank Codes</h2>
-    <div class="row"><div class="label">Tel No (Branch) :</div><div class="value"></div></div>
-    <div class="row"><div class="label">SWIFT Code :</div><div class="value"></div></div>
-    <div class="row"><div class="label">MICR Code :</div><div class="value"></div></div>
-    <div class="row"><div class="label">IFSC Code :</div><div class="value"></div></div>
-    <div class="row"><div class="label">PPO Number :</div><div class="value"></div></div>
-    <div class="row"><div class="label">Phone Banking :</div><div class="value"></div></div>
+    <div class="row"><div class="label">Tel No (Branch) :</div><div class="value">05252-220000</div></div>
+    <div class="row"><div class="label">MICR Code :</div><div class="value">271211003</div></div>
+    <div class="row"><div class="label">IFSC Code :</div><div class="value">JIOB0005038</div></div>
+    <div class="row"><div class="label">Phone Banking :</div><div class="value">1860 500 5555</div></div>
 
 </div>
 
