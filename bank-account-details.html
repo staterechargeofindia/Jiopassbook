@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Bank Account Details – Demo</title>
+<title>Jio Payment Bank – Account Details (Demo)</title>
 
 <style>
 body{
@@ -18,16 +18,41 @@ body{
     padding:0.4in;
     box-sizing:border-box;
     font-size:10.8px;
+    display:flex;
+    gap:20px;
+}
+
+/* LEFT CONTENT */
+.content{
+    flex:1;
+}
+
+/* RIGHT PHOTO BOX */
+.photo-box{
+    width:1.4in;          /* photo width */
+    height:1.75in;        /* photo height */
+    border:2px solid #000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:9px;
+}
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;     /* photo proper fit */
 }
 
 h1{
+    width:100%;
     text-align:center;
     font-size:15px;
     margin-bottom:10px;
     text-transform:uppercase;
 }
 
-/* ONE LINE QUESTION + ANSWER */
+/* QUESTION ANSWER LINE */
 .line{
     display:flex;
     align-items:flex-start;
@@ -35,17 +60,16 @@ h1{
 }
 
 .label{
-    min-width:150px;   /* question ki fixed width */
+    min-width:150px;
     font-weight:bold;
 }
 
 .value{
-    flex:1;            /* poori bachi hui chaudai */
+    flex:1;
     word-wrap:break-word;
-    white-space:normal;
 }
 
-/* print */
+/* PRINT */
 @media print{
     body{background:none;}
     .page{margin:0;}
@@ -55,95 +79,52 @@ h1{
 
 <body>
 
-<div class="page">
-
 <h1>Jio Payment Bank – Account Details (Demo)</h1>
 
-<div class="line">
-    <div class="label">Account Type :</div>
-    <div class="value">Savings Account</div>
-</div>
+<div class="page">
 
-<div class="line">
-    <div class="label">Account Number :</div>
-    <div class="value">925010005855107</div>
-</div>
+    <!-- LEFT DETAILS -->
+    <div class="content">
 
-<div class="line">
-    <div class="label">Customer ID :</div>
-    <div class="value">972803685</div>
-</div>
+        <div class="line"><div class="label">Account Type :</div><div class="value">Savings Account</div></div>
+        <div class="line"><div class="label">Account Number :</div><div class="value">925010005855107</div></div>
+        <div class="line"><div class="label">Customer ID :</div><div class="value">972803685</div></div>
+        <div class="line"><div class="label">Customer Name :</div><div class="value">MD ANWAR ALI</div></div>
+        <div class="line"><div class="label">A/c Open Date :</div><div class="value">10-02-2025</div></div>
+        <div class="line"><div class="label">CKYC Number :</div><div class="value">XXXXXXXXXX5838</div></div>
+        <div class="line"><div class="label">Mobile Number :</div><div class="value">+91 9670755035</div></div>
 
-<div class="line">
-    <div class="label">Customer Name :</div>
-    <div class="value">MD ANWAR ALI</div>
-</div>
+        <div class="line">
+            <div class="label">Address :</div>
+            <div class="value">
+                NEW BUILDING NO 37, WARD NO.4, GAYGHAT NANPARA,
+                HANUMAN MANDIR, BAHRAICH – 271865.
+            </div>
+        </div>
 
-<div class="line">
-    <div class="label">A/c Open Date :</div>
-    <div class="value">10-02-2025</div>
-</div>
+        <div class="line"><div class="label">Nomination :</div><div class="value">No Nomination</div></div>
+        <div class="line"><div class="label">Branch Code :</div><div class="value">5038</div></div>
+        <div class="line"><div class="label">Branch Name :</div><div class="value">Nanpara Bazar UP</div></div>
 
-<div class="line">
-    <div class="label">CKYC Number :</div>
-    <div class="value">XXXXXXXXXX5838</div>
-</div>
+        <div class="line">
+            <div class="label">Branch Address :</div>
+            <div class="value">
+                Upper Ground Floor, Old Building, Nanpara, Bahraich – 271865.
+            </div>
+        </div>
 
-<div class="line">
-    <div class="label">Mobile Number :</div>
-    <div class="value">+91 9670755035</div>
-</div>
+        <div class="line"><div class="label">Branch Timings :</div><div class="value">10:00 AM – 4:00 PM</div></div>
+        <div class="line"><div class="label">MICR Code :</div><div class="value">271211003</div></div>
+        <div class="line"><div class="label">IFSC Code :</div><div class="value">JIOB0005038</div></div>
+        <div class="line"><div class="label">Phone Banking :</div><div class="value">1860 500 5555</div></div>
 
-<div class="line">
-    <div class="label">Address :</div>
-    <div class="value">
-        NEW BUILDING NO 37, WARD NO.4, GAYGHAT NANPARA,
-        HANUMAN MANDIR, BAHRAICH – 271865.
     </div>
-</div>
 
-<div class="line">
-    <div class="label">Nomination :</div>
-    <div class="value">No Nomination</div>
-</div>
-
-<div class="line">
-    <div class="label">Branch Code :</div>
-    <div class="value">5038</div>
-</div>
-
-<div class="line">
-    <div class="label">Branch Name :</div>
-    <div class="value">Nanpara Bazar UP</div>
-</div>
-
-<div class="line">
-    <div class="label">Branch Address :</div>
-    <div class="value">
-        Upper Ground Floor, Old Building,
-        Nanpara, Bahraich – 271865.
+    <!-- RIGHT PHOTO -->
+    <div class="photo-box">
+        <!-- photo ka path yahan change karein -->
+        <img src="photo.jpg" alt="Customer Photo">
     </div>
-</div>
-
-<div class="line">
-    <div class="label">Branch Timings :</div>
-    <div class="value">10:00 AM – 4:00 PM</div>
-</div>
-
-<div class="line">
-    <div class="label">MICR Code :</div>
-    <div class="value">271211003</div>
-</div>
-
-<div class="line">
-    <div class="label">IFSC Code :</div>
-    <div class="value">JIOB0005038</div>
-</div>
-
-<div class="line">
-    <div class="label">Phone Banking :</div>
-    <div class="value">1860 500 5555</div>
-</div>
 
 </div>
 
